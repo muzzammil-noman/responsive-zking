@@ -1,0 +1,64 @@
+
+        <script src="js/jquery1111.min.js"></script>
+        <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+<!--slider-->
+                <div id="owl-slide" class="owl-carousel">
+                    <div class="item">
+                        <img src="img/slider-1.jpg" />
+                    </div><!-- item -->
+                    <div class="item">
+                        <img src="img/slider-2.jpg" />
+                    </div><!-- item -->
+                </div><!-- #owl-slide owl-carousel -->
+                <!--slider-end-->
+/* ---------------------------------------------------------------------------- */
+/* ----------------------------------Carousel---------------------------------- */
+/* ---------------------------------------------------------------------------- */
+.owl-controls .owl-buttons div {
+	position: absolute;
+	color:#777;
+	opacity: 0.7;
+}
+.owl-carousel:hover .owl-buttons div {
+	color:#fff;
+}
+.owl-controls .owl-buttons .owl-prev {
+	left: 10px;
+	top: 50%;
+}
+.owl-controls .owl-buttons .owl-next {
+	right: 10px;
+	top: 50%;
+}
+.owl-carousel{
+	margin-bottom: 20px;
+}
+.owl-carousel .owl-buttons div i {
+	font-size: 40px;
+	margin: -20px 0 0;
+}
+.owl-wrapper .item img{
+        width: 100%;
+    }
+
+
+
+
+<script src="owl-carousel/owl.carousel.js"></script>
+
+<script>
+     $(document).ready(function() {
+      $("#owl-slide").owlCarousel({
+        autoPlay: 3000,
+        items : 1,
+        itemsDesktop : [1199,1],
+        itemsDesktopSmall : [979,1],
+        itemsTablet : [768, 1],
+        itemsMobile : [479, 1],
+        navigation: true,
+        navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
+        pagination: false
+      });
+    });
+</script>
+
